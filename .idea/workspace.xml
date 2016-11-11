@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22748375-3cec-4dd8-944d-b243401ce9f3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/game.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/result_printer.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/word_reader.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/viselitsa.rb" afterPath="$PROJECT_DIR$/viselitsa.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="viselitsa.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,11 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="word_reader.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="word_reader.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/word_reader.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="506">
               <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -83,6 +91,7 @@
         <option value="$PROJECT_DIR$/lib/result_printer.rb" />
         <option value="$PROJECT_DIR$/lib/game.rb" />
         <option value="$PROJECT_DIR$/lib/word_reader.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -321,12 +330,12 @@
       <option name="presentableId" value="Default" />
       <updated>1478643771261</updated>
       <workItem from="1478643772852" duration="7365000" />
-      <workItem from="1478864157626" duration="2679000" />
+      <workItem from="1478864157626" duration="3066000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10044000" />
+    <option name="totallyTimeSpent" value="10431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="14" width="1919" height="1038" extended-state="0" />
@@ -435,6 +444,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
         </state>
       </provider>
