@@ -6,14 +6,14 @@
 
 class ResultPrinter
 
-  def initialize
+  def initialize (game)
     # создадим поле класса, массив, хранящий изображения виселиц
     @status_image = []
 
     current_path = File.dirname(__FILE__)
     counter = 0 # счетчик шагов
 
-    while counter <=7 do # в цикле прочитаем 7 файлов и запишем из содержимое в массив
+    while counter <= game.max_errors do # в цикле прочитаем 7 файлов и запишем из содержимое в массив
       # изображения виселиц лежат в папке /image/ в файлах 0.txt, 1.txt, 2.txt и т. д.
       file_name = current_path + "/image/#{counter}.txt"
 
@@ -41,6 +41,7 @@ class ResultPrinter
   # который нужно передать в качестве параметра
   def print_status(game)
     cls
+    puts game.version
     puts "\nСлово: #{get_word_for_print(game.letters, game.good_letters)}"
 
     # puts "Ошибки (#{game.errors}): #{game.bad_letters.to_s}" / 2 заменяется на:
@@ -49,11 +50,11 @@ class ResultPrinter
 
     print_viselitsa(game.errors)
 
-    if game.status == -1
+    if game.lost?
       puts "\nВы проиграли :(\n"
       puts "Загаданное слово было: " + game.letters.join("")
       puts
-    elsif game.status == 1
+    elsif game.won?
       puts "Поздравляем, вы выиграли!\n\n"
     else
       puts "У вас осталось ошибок: " + (7 - game.errors).to_s

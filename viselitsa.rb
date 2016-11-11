@@ -8,28 +8,27 @@
 
 current_path = "./" + File.dirname(__FILE__)
 
-require current_path + "/game.rb"
-require current_path + "/result_printer.rb"
-require current_path + "/word_reader.rb"
+require current_path + "/lib/game.rb"
+require current_path + "/lib/result_printer.rb"
+require current_path + "/lib/word_reader.rb"
 
-puts "Игра виселица. Версия 3. C чтением данных из файлов. (c) 2014 Mike Butlitsky\n\n"
-
-# создаем объект, печатающий результаты
-printer = ResultPrinter.new
+VERSION = "Игра виселица. Версия 4.\n\n"
 
 # создаем объект, отвечающий за ввод слова в игру
 word_reader = WordReader.new
-
-# Имя файла, откуда брать слово для загадывания
 
 words_file_name = current_path + "/data/words.txt"
 
 # создаем объект типа Game, в конструкторе передаем загаданное слово из word_reader-а
 game = Game.new(word_reader.read_from_file(words_file_name))
 
+game.version = VERSION
+# создаем объект, печатающий результаты
+printer = ResultPrinter.new
+
 # основной цикл программы, в котором развивается игра
 # выходим из цикла, когда объект игры сообщит нам, c пом. метода status
-while game.status == 0 do
+while game.in_progress? do
   # выводим статус игры
   printer.print_status(game)
   # просим угадать следующую букву
