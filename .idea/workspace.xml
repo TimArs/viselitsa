@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22748375-3cec-4dd8-944d-b243401ce9f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="viselitsa.iws" />
@@ -330,12 +329,12 @@
       <option name="presentableId" value="Default" />
       <updated>1478643771261</updated>
       <workItem from="1478643772852" duration="7365000" />
-      <workItem from="1478864157626" duration="3066000" />
+      <workItem from="1478864157626" duration="3643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10431000" />
+    <option name="totallyTimeSpent" value="11008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="14" width="1919" height="1038" extended-state="0" />
