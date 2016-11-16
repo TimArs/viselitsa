@@ -79,11 +79,11 @@ class Game
   end
 
   def lost?
-    @status =:lost || @errors >= MAX_ERRORS
+    @status ==:lost || @errors >= MAX_ERRORS
   end
 
   def won?
-    @status =:won
+    @status ==:won
   end
 
   def in_progress?
