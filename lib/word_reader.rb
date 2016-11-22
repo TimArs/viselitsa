@@ -16,7 +16,7 @@ class WordReader
   # имя файла передается как аргумент метода
   def read_from_file(file_name)
     # проверка, если файла не существует, сразу возвращаем nil
-    return nil if (File.exist?(file_name)==false)
+    return unless File.exist?(file_name)
 
     end
     f = File.new(file_name, "r:UTF-8") # открываем файл, явно указывая его кодировку
