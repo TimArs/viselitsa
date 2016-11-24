@@ -17,8 +17,7 @@ class WordReader
   def read_from_file(file_name)
     # проверка, если файла не существует, сразу возвращаем nil
     return unless File.exist?(file_name)
-
-    end
+    
     f = File.new(file_name, "r:UTF-8") # открываем файл, явно указывая его кодировку
     lines = f.readlines   # читаем все строки в массив
     f.close # закрываем файл
